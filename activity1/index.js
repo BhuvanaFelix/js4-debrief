@@ -7,26 +7,35 @@ function functionName() {
  
 }
 // Call the event with an event listener
-elementName.addEventListener("onclick", functionName);
+//elementName.addEventListener("onclick", functionName);
 
 // 1. DISPLAY NAME
 // Click the button to display your name in the box
 // (Tip: in this example, you will hard code your name within the JavaScript function, rather than use the input box to grab it).
-
+const mybutton = document.getElementById('btnName');
+console.log(mybutton);
 // Selectors
 
-// Function
-
+//Function
+function displayName(){
+ let displayNam = document.getElementById('myName');
+ displayNam.value = "Anthony Kathryn Bhuvana";
+}
+mybutton.addEventListener('click',displayName)
 // Call the event
+mybutton.displayName;
 
 // 2. LIGHTSWITCH
 // Switch lights on mouseover
 // When the mouse cursor is on the lightbulb image, the lighton image should show; and revert back to the lightoff image when the mouse moves off.
-
+const myimg = document.getElementById('imageOff');
 // Selectors
-
+myimg.onmouseover = lighton;
 // Function
-
+function lighton(){
+  //myimg.display.hidden = true;
+  myimg.src = "images/lighton.png";
+}
 // Call the event
 
 // 3. Double click button to display content
